@@ -1,0 +1,240 @@
+.intro {
+    margin: 30px 0px;
+    font-weight: bold;
+  }
+.todo_head{
+    padding-top: 100px;
+    padding-left: 150px;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 120px;
+}
+.detail_p{
+    padding-top: -150px;
+    color: #ffffff;
+    font-size: 20px;
+}
+  
+#first {
+    margin-top: 10px;
+    color: #ffcd5d;
+}
+  
+#second {
+color: #51df70;
+}
+  
+#third {
+    color: #025f70;
+    margin-bottom: 30px;
+}
+  
+#enter {
+    font-size: 30px;
+    border: none;
+    padding: 40px 45px;
+    border-radius: 50px;
+    color: #ff0000;
+    background-color: #025f70;
+    transition: all 0.75s ease;
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75 ease;
+    font-weight: normal;
+}
+  
+#enter:hover {
+    background-color: #02798f;
+    color: #ffcd5d;
+}
+  
+ul {
+    text-align: left;
+    margin-top: 20px;
+}
+  
+li {
+    list-style: none;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 600;
+    border: 2px solid #025f70;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: #4eb9cd;
+    transition: all 0.75s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5 ease;
+}
+  
+li:hover {
+    background: #76cfe0;
+}
+  
+li > button {
+    font-weight: normal;
+    background: none;
+    border: none;
+    float: right;
+    color: #ff0707;
+    /*color: #025f70;*/
+    font-weight: 800;
+}
+  
+.maininput {
+    border-radius: 50px;
+    min-width: 65%;
+    padding: 25px;
+    border: none;
+}
+
+.done {
+    background: #51df70 !important;
+    color: #00891e;
+}
+  
+.delete {
+    display: none;
+}
+.rectangle {
+    position: relative;
+    left: -10px;
+    top: -9px;
+    height: 120px;
+    width: 1600px;
+    background-color: rgba(184, 183, 183, 0.522);
+}
+.ButtonRec1 {
+    position: absolute;
+    left: 70px;
+    top: 25px;
+    border-radius: 50px;
+    height: 70px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+}
+.ButtonRec2 {
+    position: absolute;
+    left: 360px;
+    top: 25px;
+    border-radius: 50px;
+    height: 70px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+}
+.ButtonRec3 {
+    position: absolute;
+    left: 645px;
+    top: 25px;
+    border-radius: 50px;
+    height: 70px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+}
+.ButtonRec4 {
+    position: absolute;
+    left: 940px;
+    top: 25px;
+    border-radius: 50px;
+    height: 70px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+}
+.ButtonRec5 {
+    position: absolute;
+    left: 1230px;
+    top: 25px;
+    border-radius: 50px;
+    height: 70px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+}
+.ButtonProfile {
+    position: absolute;
+    left: 1500px;
+    top: 25px;
+    border-radius: 50px;
+    height: 70px;
+    width: 70px;
+    background-color: rgb(255, 255, 255);
+}
+img{
+    height: 70px;
+    width: 70px;
+}
+.Section{
+    font-size: 80px;
+    color:white;
+}
+.TopText{
+    position: absolute;
+    top: -29px;
+    font-size: 40px;
+    color:black;
+}
+.textfield{
+    height: 70px;
+    width: 500px;
+    margin-left: 200px;
+    border-radius: 50px;
+    padding: 25px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.622);
+}
+.normaltext{
+    font-size: 40px;
+    tab-size: 100;
+    color:white;
+}
+.Signupbutton {
+    border-radius: 50px;
+    height: 70px;
+    width: 300px;
+    font-size: 40px;
+    background-color: rgb(112, 104, 104);
+}
+.logintext{ /*ตัวหนังสือพวกEmail*/
+    font-size: 30px;
+    left: 100px ;
+    color: #f8f2f2; 
+
+
+}
+.box h1{  /*ตัวหนังสือLogin*/
+    display: flex;
+    font-size: 80px;
+    justify-content: center;
+    color: #faf3f3;
+}
+.boxinput{ /*ช่องกรอก*/
+    width: 700px;
+    height: 70px;
+    font-size: 20px;
+    background: #b1acac;
+    border: none;
+    border: solid 2px #b1acac;
+    color: #f1ebeb;  /*สีข้อความช่องกรอก*/
+    padding: 5px 15px;
+    margin: 10px auto;
+    border-radius: 30px; /*กรอบมน*/
+    transition: 10;
+}
+.boxi.input[type="submit"]{
+    width: 150px;
+    cursor: pointer;
+    transition: 5s;
+    border: solid 2px;
+    border: solid 2px #EE3728;
+    
+}
+.box input[type="submit"]:hover{
+    transition: 5;
+    background-color: rgb(74, 204, 252);
+    color: aqua;
+}
