@@ -225,14 +225,6 @@ img{
     border-radius: 30px; /*กรอบมน*/
     transition: 10;
 }
-.boxi.input[type="submit"]{
-    width: 150px;
-    cursor: pointer;
-    transition: 5s;
-    border: solid 2px;
-    border: solid 2px #EE3728;
-    
-}
 .box input[type="submit"]:hover{
     transition: 5;
     background-color: rgb(74, 204, 252);
