@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <!-- Custom Style -->
+    <link rel="stylesheet" type="text/css" href="background.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans Cham' rel='stylesheet'>
+
+    <title>SING UP</title>
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <div id="app">
+
+        <div class="rectangle"></div>
+        <div class="ButtonRec1">
+            <a href="index.html">
+            <p class="TopText"style="left: 35px;">LOGIN</p>
+            </a>
+        </div>
+        <div class="ButtonRec2">
+            <a href="signup.html">
+            <p class="TopText"style="left: 35px;" >SIGNUP</p>
+            </a>
+        </div>
+        <div class="ButtonRec3">
+            <a href="secA.html">
+            <p class="TopText"style="left: 45px;" >SEC A</p>
+            </a>
+        </div>
+        <div class="ButtonRec4">
+            <a href="secB.html">
+            <p class="TopText "style="left: 45px;" >SEC B</p>
+            </a>
+        </div>
+        <div class="ButtonRec5">
+            <a href="secC.html">
+            <p class="TopText" style="left: 45px;" >SEC C</p>
+            </a>
+        </div>  
+        <div class="ButtonProfile">
+            <img src="profile.png">
+        </div>
+        <p class="normaltext" style="text-align: center;">SING UP</p>
+        <div class="box">
+        <span class="normaltext" style="margin-left: 350px;"> Username:</span> <span class="normaltext" style="margin-left: 550px;">Password</span>
+        <br>
+        <input class="textfield" type="text" placeholder="Enter Username..." maxlength="255" >
+        <input class="textfield" type="password" placeholder="Enter Password..." maxlength="255" >
+            <br><br>
+        <span class="normaltext" style="margin-left: 350px;"> Name-Surname:</span> <span class="normaltext" style="margin-left: 460px;">Email:</span>
+        <input class="textfield" type="text" placeholder="Enter Name-Surname..." maxlength="255" >
+        <input class="textfield" type="text" placeholder="Enter Email..." maxlength="255" >
+            <br><br>
+        <span class="normaltext" style="margin-left: 350px;"> PhoneNumber:</span><br>
+        <input class="textfield" type="text" placeholder="Enter PhoneNumber..." maxlength="10" ></input>
+        <input class="Signupbutton" style="margin-left: 350px; margin-top: 5px;" type="submit" @click="getMember(); " value="สมัครสมาชิก">
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        Vue.createApp({
+          data() {
+            return {
+              data:[],
+            }
+          },
+          methods: {
+            getMember(){
+                axios.get("http://localhost:3000/member").then(res => {
+                    console.log(res);
+                }).catch(err =>{
+                    console.log(err);
+                });
+            }
+          }
+        }).mount('#app')
+    </script>
+</body>
+</html>
