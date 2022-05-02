@@ -107,12 +107,12 @@ li > button {
     left: -10px;
     top: -9px;
     height: 120px;
-    width: 1600px;
+    width: 1545px;
     background-color: rgba(184, 183, 183, 0.522);
 }
 .ButtonRec1 {
     position: absolute;
-    left: 70px;
+    left: 30px;
     top: 25px;
     border-radius: 50px;
     height: 70px;
@@ -121,7 +121,7 @@ li > button {
 }
 .ButtonRec2 {
     position: absolute;
-    left: 360px;
+    left: 270px;
     top: 25px;
     border-radius: 50px;
     height: 70px;
@@ -130,7 +130,7 @@ li > button {
 }
 .ButtonRec3 {
     position: absolute;
-    left: 645px;
+    left: 510px;
     top: 25px;
     border-radius: 50px;
     height: 70px;
@@ -139,7 +139,7 @@ li > button {
 }
 .ButtonRec4 {
     position: absolute;
-    left: 940px;
+    left: 750px;
     top: 25px;
     border-radius: 50px;
     height: 70px;
@@ -148,7 +148,7 @@ li > button {
 }
 .ButtonRec5 {
     position: absolute;
-    left: 1230px;
+    left: 1000px;
     top: 25px;
     border-radius: 50px;
     height: 70px;
@@ -157,12 +157,12 @@ li > button {
 }
 .ButtonProfile {
     position: absolute;
-    left: 1500px;
+    left: 1300px;
     top: 25px;
     border-radius: 50px;
     height: 70px;
-    width: 70px;
-    background-color: rgb(255, 255, 255);
+    width: 200px;
+    background-color: red;
 }
 img{
     height: 70px;
@@ -225,16 +225,35 @@ img{
     border-radius: 30px; /*กรอบมน*/
     transition: 10;
 }
-.boxi.input[type="submit"]{
-    width: 150px;
-    cursor: pointer;
-    transition: 5s;
-    border: solid 2px;
-    border: solid 2px #EE3728;
-    
-}
 .box input[type="submit"]:hover{
     transition: 5;
     background-color: rgb(74, 204, 252);
     color: aqua;
+}
+.ButtonsecA {
+    position: absolute;
+    left: 400px;
+    top: 25px;
+    border-radius: 50px;
+    height: 70px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+}
+.ButtonsecB {
+    position: absolute;
+    left: 700px;
+    top: 25px;
+    border-radius: 50px;
+    height: 70px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+}
+.ButtonsecC {
+    position: absolute;
+    left: 400px;
+    top: 25px;
+    border-radius: 50px;
+    height: 70px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
 }

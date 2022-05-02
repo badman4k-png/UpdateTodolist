@@ -2,10 +2,13 @@ const memberModel = require('../models/member');
 exports.findMember = async () =>{
     return await memberModel.find();
 }
-exports.Createmember = async (firstname, lastname) =>{
+exports.Createmember = async (Username, name, email, password, phone) =>{
     const member = new memberModel({
-        firstname: firstname,
-        lastname: lastname
+        Username: Username,
+        name: name,
+        email: email,
+        password: password, 
+        phone: phone
     });
     return await member.save();
 }

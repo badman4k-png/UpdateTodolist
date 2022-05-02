@@ -4,66 +4,61 @@
 
     <meta charset="UTF-8">
     <!-- Custom Style -->
-    <link rel="stylesheet" type="text/css" href="/Backend/www/css/background.css">
-    <link rel="stylesheet" type="text/css" href="/Backend/www/css/style.css">
+    <link rel="stylesheet" type="text/css" href="background.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet">
-
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans Cham' rel='stylesheet'>
+    
     <title>Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
 </head>
 <body>
-    <script src="https://unpkg.com/vue@3"></script>
+    
 
     <div id="app">
-    <div class="rectangle"></div>
-    <div class="ButtonRec1">
-        <a href="login.html">
-        <p class="TopText"style="left: 35px;">LOGIN</p>
-        </a>
-    </div>
-    <div class="ButtonRec2">
-        <a href="signup.html">
-        <p class="TopText"style="left: 35px;" >SIGNUP</p>
-        </a>
-    </div>
-    <div class="ButtonRec3">
-        <a href="secA.html">
-        <p class="TopText"style="left: 45px;" >SEC A</p>
-        </a>
-    </div>
-    <div class="ButtonRec4">
-        <a href="secB.html">
-        <p class="TopText "style="left: 45px;" >SEC B</p>
-        </a>
-    </div>
-    <div class="ButtonRec5">
-        <a href="secC.html">
-        <p class="TopText" style="left: 45px;" >SEC C</p>
-        </a>
-    </div>  
-    <div class="ButtonProfile">
-        <img src="/Backend/www/img/profile.png">
-    </div>
-    <div class="box" style="text-align: center;">
-        <h1>LOGIN</h1>
-        <spanp class="logintext">EMAIL</span>
-        <br> 
-        <input class="boxinput" type="text" placeholder="Enter Email..." maxlength="255" >
-        <br>
-        <span class="logintext">PASSWORD</span>
-        <br>
-        <input class="boxinput"type="password" placeholder="Enter Password..." maxlength="255"><br><br>
-        <input class="Signupbutton" type="submit" value="เข้าสู่ระบบ">
-    </div>
+        <div class="rectangle"></div>
+        <div class="ButtonRec1">
+            <a href="login.html">
+            <p class="TopText"style="left: 35px;">LOGIN</p>
+            </a>
+        </div>
+        <div class="ButtonRec2">
+            <a href="signup.html">
+            <p class="TopText"style="left: 35px;" >SIGNUP</p>
+            </a>
+        </div>
+        <div class="ButtonRec3">
+            <a @click="notLogin()" href="login.html">
+            <p class="TopText"style="left: 45px;" >SEC A</p>
+            </a>
+        </div>
+        <div class="ButtonRec4">
+            <a @click="notLogin()" href="login.html">
+            <p class="TopText "style="left: 45px;" >SEC B</p>
+            </a>
+        </div>
+        <div class="ButtonRec5">
+            <a @click="notLogin()" href="login.html">
+            <p class="TopText" style="left: 45px;" >SEC C</p>
+            </a>
+        </div>  
+        
+        <div class="box" style="text-align: center;">
+            <h1>LOGIN</h1>
+            <spanp class="logintext">Username</span>
+            <br> 
+            <input class="boxinput" type="text" v-model="form.Username" placeholder="Enter Username..." maxlength="255" >
+            <br>
+            <span class="logintext">PASSWORD</span>
+            <br>
+            <input class="boxinput"type="password" v-model="form.password" placeholder="Enter Password..." maxlength="255"><br><br>
+            <a href="secA.html">
+                <input @click="onLogin()" class="Signupbutton" type="submit" value="เข้าสู่ระบบ">
+            </a>
+        </div>
 </div>
-<script>
-    Vue.createApp({
-      data() {
-        return {
-          message: 'Hello Vue!'
-        }
-      }
-    }).mount('#app')
-</script>
+
+<script type="text/javascript" src="login.js"></script>
 </body>
 </html>

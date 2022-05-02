@@ -4,8 +4,8 @@
 
     <meta charset="UTF-8">
     <!-- Custom Style -->
-    <link rel="stylesheet" type="text/css" href="/Backend/www/css/background.css">
-    <link rel="stylesheet" type="text/css" href="/Backend/www/css/style.css">
+    <link rel="stylesheet" type="text/css" href="background.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Noto Sans Cham' rel='stylesheet'>
 
@@ -13,26 +13,13 @@
     
 </head>
 <body>
-    <script src="https://unpkg.com/vue@3"></script>
-
-    <div id="app">
     <div class="rectangle"></div>
-    <div class="ButtonRec1">
-        <a href="login.html">
-        <p class="TopText"style="left: 35px;">LOGIN</p>
-        </a>
-    </div>
-    <div class="ButtonRec2">
-        <a href="signup.html">
-        <p class="TopText"style="left: 35px;" >SIGNUP</p>
-        </a>
-    </div>
-    <div class="ButtonRec3">
+    <div class="ButtonsecA">
         <a href="secA.html">
         <p class="TopText"style="left: 45px;" >SEC A</p>
         </a>
     </div>
-    <div class="ButtonRec4">
+    <div class="ButtonsecB">
         <a href="secB.html">
         <p class="TopText "style="left: 45px;" >SEC B</p>
         </a>
@@ -43,7 +30,9 @@
         </a>
     </div>   
     <div class="ButtonProfile">
-        <img src="/Backend/www/img/profile.png">
+        <a href="menu.html">
+        <img src="logout2.png"> <p class="TopText" style="left: 70px; top: -20px; font-size: 30px;" >LOGOUT</p>
+        </a>
     </div>
     <div class="container" style="text-align: center;">
         <div class="row">
@@ -71,15 +60,5 @@
             <script type="text/javascript" src="main.js"></script>
         </div>
     </div>
-</div>
-<script>
-    Vue.createApp({
-      data() {
-        return {
-          message: 'Hello Vue!'
-        }
-      }
-    }).mount('#app')
-</script>
 </body>
 </html>
