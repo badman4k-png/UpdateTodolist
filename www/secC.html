@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html lang="en">
 
 <head>
@@ -61,4 +62,91 @@
         </div>
     </div>
 </body>
+=======
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <!-- Custom Style -->
+    <link rel="stylesheet" type="text/css" href="background.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans Cham' rel='stylesheet'>
+
+    <title>Sec A Todo-list</title>
+    
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <div id="app">
+    <div class="rectangle"></div>
+    <div class="ButtonRec1">
+        <a href="index.html">
+        <p class="TopText"style="left: 35px;">LOGIN</p>
+        </a>
+    </div>
+    <div class="ButtonRec2">
+        <a href="signup.html">
+        <p class="TopText"style="left: 35px;" >SIGNUP</p>
+        </a>
+    </div>
+    <div class="ButtonRec3">
+        <a href="secA.html">
+        <p class="TopText"style="left: 45px;" >SEC A</p>
+        </a>
+    </div>
+    <div class="ButtonRec4">
+        <a href="secB.html">
+        <p class="TopText "style="left: 45px;" >SEC B</p>
+        </a>
+    </div>
+    <div class="ButtonRec5">
+        <a href="secC.html">
+        <p class="TopText" style="left: 45px;" >SEC C</p>
+        </a>
+    </div>    
+    <div class="ButtonProfile">
+        <img src="profile.png">
+    </div>
+    <div class="container" style="text-align: center;">
+        <div class="row">
+            <div class="intro col-120">
+                <p class="Section">Sec C</p>
+                <div>
+                    <div class="border1"></div>
+                    <div c="" div="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <input class="maininput" id="userInput" type="text" placeholder="ใส่หัวข้อที่คุณต้องการ...." maxlength="255">
+                        <button id="enter">X<i class="fas fa-pencil-alt" ></i></button>
+                    </div>
+                </div>
+                <!-- Empty List -->
+                <div class="row">
+                    <div class="listItems col-12">
+                        <ul class="col-12 offset-0 col-sm-8 offset-sm-2">
+                        </ul>
+                    </div>
+                </div>  
+            </div>
+            <script type="text/javascript" src="main.js"></script>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    Vue.createApp({
+      data() {
+        return {
+          message: 'Hello Vue!'
+        }
+      }
+    }).mount('#app')
+</script>
+</body>
+>>>>>>> 4d3acc7379925808a7fdf2c53b279b16e846718e
 </html>

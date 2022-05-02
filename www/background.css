@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   height: auto ;
   width: 100vw;
@@ -22,3 +23,10 @@ body {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 */
+=======
+body {
+  
+  background-image: url("BG.jpg");
+  font-family: 'Noto Sans Cham';
+}
+>>>>>>> 4d3acc7379925808a7fdf2c53b279b16e846718e
