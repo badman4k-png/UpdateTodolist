@@ -1,12 +1,11 @@
 const express = require('express');
 const route = express.Router();
 const userModel = require('../models/member')
-route.get('/',(req,res) => {
+route.get('/check',(req,res) => {
     try{
         res.status(201).json({
-            Data: newuser,
             status: true,
-            message: "Get data"
+            message: "รันปกติแล้วนะจ๊ะ"
         });
     }catch{
         res.status(500).json({
@@ -42,31 +41,27 @@ route.post('/register',async (req,res) => {
 });
 
 route.post('/login', async (req,res) => {
-    try{
+    //try{
         const data = req.body;
 
-        const user =  await userModel.findOne({email: data.email, password: data.password})
+        const user =  await userModel.findOne({Username: data.Username, password: data.password})
 
         if (user){
             console.log(data);
             user.password = undefined;
             delete user.password;
             req.session.dataUser = user;
-            res.status(202).json({Data: user,message: "Login Successfully! :)"
-            });
+            res.status(202).json({Data: user,message: "Login Successfully! :)"});
         }else{
             console.log(data);
-            res.status(400).json({
-                status: false,
-                message: "Login failed ! Please Try again:)"
-            });
+            res.status(400).json({status: false,message: "Login failed ! Please Try again:)"});
         }
-    }catch{
-        res.status(500).json({
-            status: false,
-            message: "Can't register! :("
-        });
-    }
+    //}catch{
+   //    res.status(500).json({
+    //        status: false,
+   //         message: "Can't register! :("
+     //   });
+    //}
 });
 
 route.get('/checkUserlogin',(req,res) => {
@@ -80,8 +75,13 @@ route.get('/checkUserlogin',(req,res) => {
     }catch{
         res.status(500).json({
             status: false,
-            message: "Error"
+            message: "Error check user login"
         });
     } 
 });
 module.exports = route;
+
+
+
+
+
