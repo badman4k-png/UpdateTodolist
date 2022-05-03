@@ -9,8 +9,9 @@ Vue.createApp({
     },
     methods: {
         async onLogin() {
-            if (this.form.password === this.form.password) {
-            await axios.post('http://localhost:3000/login', {
+      		alert('Login Success')
+      		window.location.href = './secA.html';
+            await axios.post('https://jstodolist.app.ruk-com.cloud/login', {
                 Username: this.form.Username,
                 password: this.form.password
             })
@@ -19,17 +20,18 @@ Vue.createApp({
                         alert(res.data.msg);
                         console.log(res.data)
                         localStorage.setItem("dataUser", JSON.stringify(res.data.data));
-                        window.location.href = './../../secA.html';
+                        
                     }
+              	alert('ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง')
                 })
                 .catch((err) => {
-                    alert('ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง')
+                    
                 }) 
-            }
-        }
-    },methods: {
+            },
         async notLogin() {
                 alert('กรุณาสมัครสมาชิกหรือล็อคอินก่อน')
         }
     },
 }).mount('#app')
+
+

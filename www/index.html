@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <!-- Custom Style -->
+    <link rel="stylesheet" type="text/css" href="background.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet">
+
+    <title>Home</title>
+</head>
+
+<body>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 70vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    font-size: 1.7rem;
+    padding:10px 70px;
+    background:none;
+    border: #04f5e1 solid 2px;
+    color: #f4fbfb;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    transition: .4s;
+    overflow: hidden; 
+    cursor: pointer;
+}
+button::after{
+    content:'' ;
+    width: 0%;
+    height: 100%;
+    position: absolute; 
+    background: #4eb9cd;
+    left: 0;
+    top:0;
+    transition: .4s;
+    z-index: -1;
+    ;
+}
+button:hover{
+    color: #eaf0eb;
+}
+button:hover::after{
+    width: 100%;
+
+}
+    </style>
+    <div align="left">
+        <br><br><br><br><br><br><br><br><br><br>
+        <b>
+            <font style="font-size:110px;" color="#FFFFFF">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TO&nbsp;&nbsp;DO&nbsp;&nbsp;LIST </font>
+        </b><br><br>
+        <b>
+            <font style="font-size:20px;" color="#BEBEBE">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FOR&nbsp; KING&nbsp;
+                MONGKUT'S&nbsp; UNIVERSITY&nbsp; OF &nbsp;TECHNOLOGY&nbsp; NORTH&nbsp; BANGKOK <br><br><br><br><br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="login.html"><button>LOGIN&nbsp;</button></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="signup.html"><button>SIGN UP</button></a> <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="signup.html"><button>SEC
+                &nbsp;A</button></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="signup.html"><button>SEC &nbsp;B&nbsp;&nbsp;</button></a><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="signup.html"><button>SEC C</button></a>
+            </font>
+    </div>
+</body>
+</html>
